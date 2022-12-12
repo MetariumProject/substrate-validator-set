@@ -2,12 +2,6 @@
 
 A [Substrate](https://github.com/paritytech/substrate/) pallet to add/remove authorities/validators using extrinsics in PoA networks.
 
-**Note: Current master is compatible with Substrate [polkadot-v0.9.33](https://github.com/paritytech/substrate/tree/polkadot-v0.9.33) branch. For older versions, please see releases/tags.**
-
-## Demo
-
-To see this pallet in action in a Substrate runtime, watch this video - https://www.youtube.com/watch?v=lIYxE-tOAdw
-
 ## Setup with Substrate Node Template
 
 ### Dependencies - runtime/cargo.toml
@@ -20,13 +14,13 @@ To see this pallet in action in a Substrate runtime, watch this video - https://
 [dependencies.validator-set]
 default-features = false
 package = 'substrate-validator-set'
-git = 'https://github.com/gautamdhameja/substrate-validator-set.git'
-version = '0.9.33'
+git = 'https://github.com/MetariumProject/substrate-validator-set.git'
+version = '0.9.32'
 
 [dependencies.pallet-session]
 default-features = false
 git = 'https://github.com/paritytech/substrate.git'
-branch = 'polkadot-v0.9.33'
+branch = 'polkadot-v0.9.32'
 ```
 
 ```toml
@@ -193,3 +187,5 @@ When a validator goes offline, it skips its block production slot in Aura and th
 ## Disclaimer
 
 This code is **not audited and reviewed** for production use cases. You can expect bugs and security vulnerabilities. Do not use it as-is in real applications.
+
+Forked from https://github.com/gautamdhameja/substrate-validator-set
